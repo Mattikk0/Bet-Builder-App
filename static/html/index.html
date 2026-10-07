@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bet-builder-app</title>
+    <link rel="stylesheet" href="../assets/styles.css">
+</head>
+<body class="body">
+    <div id ="main-container">
+        <section id="preference-config">
+            <nav id="preference-list">
+                <b>Ticket configuration</b>
+                <ul class="ul">
+                    <li>
+                        <div class="pref-div">
+                            <b>Target AKO:</b>
+                            <div class="slidecontainer">
+                                <input type="range" min="10" max="200" value="30" class="slider" id="ako-range">
+                                <p>Value: <span id="val-decimal"></span></p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="pref-div">
+                            <b>Number of games on the ticket:</b>
+                            <div class="slidecontainer">
+                                <input type="range" min="1" max="10" value="3" class="slider" id="games-range">
+                                <p>Value: <span id="val-integer"></span></p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="pref-div">
+                            <b>Risk level:</b>
+                            <div class="checkbox-container" id="risk-container">
+                                <div class="checkbox">
+                                    <input class="inp-cbx" id="low-risk" type="checkbox">
+                                    <label class="cbx" for="low-risk"><span><svg width="12px" height="10px" viewBox="0 0 12 10"><polyline points="1.5 6 4.5 9 10.5 1"></polyline></svg></span><span>Low risk</span></label>
+                                </div>
+                                <div class="checkbox">
+                                    <input class="inp-cbx" id="normal-risk" type="checkbox">
+                                    <label class="cbx" for="normal-risk"><span><svg width="12px" height="10px" viewBox="0 0 12 10"><polyline points="1.5 6 4.5 9 10.5 1"></polyline></svg></span><span>Normal risk</span></label>
+                                </div>
+                                <div class="checkbox">
+                                    <input class="inp-cbx" id="high-risk" type="checkbox">
+                                    <label class="cbx" for="high-risk"><span><svg width="12px" height="10px" viewBox="0 0 12 10"><polyline points="1.5 6 4.5 9 10.5 1"></polyline></svg></span><span>High risk</span></label>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="pref-div">
+                            <b>Leagues:</b>
+                            <div class="checkbox-container" id="league-container">
+                                <div class="checkbox">
+                                    <input class="inp-cbx" id="bundesliga" type="checkbox">
+                                    <label class="cbx" for="bundesliga"><span><svg width="12px" height="10px" viewBox="0 0 12 10"><polyline points="1.5 6 4.5 9 10.5 1"></polyline></svg></span><span>Bundesliga</span></label>
+                                </div>
+                                <div class="checkbox">
+                                    <input class="inp-cbx" id="premier-league" type="checkbox">
+                                    <label class="cbx" for="premier-league"><span><svg width="12px" height="10px" viewBox="0 0 12 10"><polyline points="1.5 6 4.5 9 10.5 1"></polyline></svg></span><span>Premier League</span></label>
+                                </div>
+                                <div class="checkbox">
+                                    <input class="inp-cbx" id="ligue-1" type="checkbox">
+                                    <label class="cbx" for="ligue-1"><span><svg width="12px" height="10px" viewBox="0 0 12 10"><polyline points="1.5 6 4.5 9 10.5 1"></polyline></svg></span><span>Ligue 1</span></label>
+                                </div>
+                                <div class="checkbox">
+                                    <input class="inp-cbx" id="serie-a" type="checkbox">
+                                    <label class="cbx" for="serie-a"><span><svg width="12px" height="10px" viewBox="0 0 12 10"><polyline points="1.5 6 4.5 9 10.5 1"></polyline></svg></span><span>Serie A</span></label>
+                                </div>
+                                <div class="checkbox">
+                                    <input class="inp-cbx" id="la-liga" type="checkbox">
+                                    <label class="cbx" for="la-liga"><span><svg width="12px" height="10px" viewBox="0 0 12 10"><polyline points="1.5 6 4.5 9 10.5 1"></polyline></svg></span><span>La Liga</span></label>
+                                </div>
+                                <div class="checkbox">
+                                    <input class="inp-cbx" id="champions-league" type="checkbox">
+                                    <label class="cbx" for="champions-league"><span><svg width="12px" height="10px" viewBox="0 0 12 10"><polyline points="1.5 6 4.5 9 10.5 1"></polyline></svg></span><span>Champions League</span></label>
+                                </div>
+                                <div class="checkbox">
+                                    <input class="inp-cbx" id="europa-league" type="checkbox">
+                                    <label class="cbx" for="europa-league"><span><svg width="12px" height="10px" viewBox="0 0 12 10"><polyline points="1.5 6 4.5 9 10.5 1"></polyline></svg></span><span>Europa League</span></label>
+                                </div>
+                                <div class="checkbox">
+                                    <input class="inp-cbx" id="conference-league" type="checkbox">
+                                    <label class="cbx" for="conference-league"><span><svg width="12px" height="10px" viewBox="0 0 12 10"><polyline points="1.5 6 4.5 9 10.5 1"></polyline></svg></span><span>Conference League</span></label>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </section> 
+        <div id="button-container">
+            <div id="loader" class="loader"></div>
+            <button id="start-button">Generate a ticket</button>
+        </div>
+    </div>
+    <script src="../assets/animations+assets.js"></script>
+    <script src="../assets/data.js"></script>
+</body>
+</html>

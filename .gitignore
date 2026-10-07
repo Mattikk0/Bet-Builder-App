@@ -1,0 +1,10 @@
+/.venv
+/__pycache__
+
+/modules/__pycache__
+
+/database/__pycache__
+
+/queries/__pycache__
+
+/tests/__pycache__
