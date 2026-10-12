@@ -339,16 +339,5 @@ This repository is a technical prototype and should not be treated as a finished
 
 No license file is currently included in the repository, so the project is effectively unlicensed unless otherwise specified by the repository owner.
 
-## Contributing
-
-If you want to continue developing the project, the most relevant areas are:
-
-- frontend UX and ticket display,
-- improved analysis model,
-- database reliability,
-- API integration and validation,
-- testing and deployment setup.
-
----
 
 This README reflects the current state of the project: a working prototype with a strong foundation, but still under active development.
